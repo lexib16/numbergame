@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #db34bf, #51c8f7);
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s infinite;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: background 0.1s;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h1 {
+    background: linear-gradient(45deg, #fff, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: hsl(313, 36%, 95%);
+    padding: 20px;
+    font-size: 36px;
+    transition: background 0.1s;
+  }
+  
+  h1:hover {
+    background: linear-gradient(45deg, #fff, #fff);
+    color: #e74c3c;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #guess-form {
+    margin-top: 20px;
+    transition: transform 0.2s;
+    background-color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(54, 7, 7, 0.2);
+  }
+  
+  #guess-form:hover {
+    transform: scale(1.05);
+  }
+  
+  input[type='number'] {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #303a36;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type='number']:focus {
+    border-color: #47b15e;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #34badb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e2e6dc;
+  }
+  
+  #new-game {
+    margin: 20px auto; /* Center horizontally and add some top margin */
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #909492;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color change */
+  }
+  
+  #new-game:hover {
+    background-color: #c0392b; /* Hover effect for the button */
+  }

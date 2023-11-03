@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Find the Number Game ♠</title>
+  </head>
+  <body>
+    <h1>Find The Number Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <form id="guess-form">
+      <input type="number" name="number" id="user-guess" max="100" min="1" />
+      <button type="submit">Submit Guess</button>
+    </form>
+    <p id="message"></p>
+    <p id="lives">Lives: 5</p>
+    <button id="new-game" style="display: none">Start New Game</button>
+    <script src="./app.js"></script>
+  </body>
+</html>
